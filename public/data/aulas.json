@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "materia": "Matemática",
+    "titulo": "Frações",
+    "busca": {
+      "fundamental": "frações matemática explicação fácil",
+      "medio": "frações matemática aula completa"
+    }
+  },
+  {
+    "id": 2,
+    "materia": "Matemática",
+    "titulo": "Regra de 3",
+    "busca": {
+      "fundamental": "regra de 3 simples explicação",
+      "medio": "regra de 3 composta aula"
+    }
+  }
+]
