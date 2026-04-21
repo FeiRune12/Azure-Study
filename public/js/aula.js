@@ -44,10 +44,13 @@ async function buscarVideo(termo) {
 
 // 🎥 MOSTRAR VÍDEOS
 function mostrarVideos(videos) {
+  console.log("VIDEOS RECEBIDOS:", videos);
   const container = document.getElementById("videoOptions");
   container.innerHTML = "";
 
   videos.forEach(v => {
+    if (!v.id || !v.id.videoId) return; // 🔥 proteção
+
     const id = v.id.videoId;
 
     const div = document.createElement("div");
@@ -62,7 +65,6 @@ function mostrarVideos(videos) {
     container.appendChild(div);
   });
 }
-
 
 // ▶️ CARREGAR VÍDEO
 function carregarVideo(id) {
